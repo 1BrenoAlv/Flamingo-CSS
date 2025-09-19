@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+div {
+      height: 100vh;
+       background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.divOne, .divThree, .divFive {
+    background-attachment: fixed;
+    color: #fff;
+  
+}
+
+.divOne{
+    background-image: url('/img/train.png');
+   
+}
+.divTwo{
+    background-image: url('/img/neyBp.png');
+   
+}
+.divThree{
+    background-image: url('/img/messi.png');
+   
+}
+.divFuor{
+    background-image: url('/img/tiringa.png');
+   
+}
+.divFive{
+    background-image: url('/img/virtus.png');
+   
+}
+.divSix{
+    background-image: url('/img/naldo.png');
+   
+}
