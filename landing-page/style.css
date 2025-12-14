@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F9FD;
+    color: #111;
+    overflow-x: hidden;
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+ul { 
+    list-style: none; 
+}
+
+.conteiner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.botao {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.botao-primario {
+    background-color: #4353FF;
+    color: white;
+}
+
+.botao-contorno {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+.botao-grande {
+    padding: 14px 32px;
+    font-size: 16px;
+}
+
+.botao-contorno-claro {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.7);
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.cabecalho {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 0;
+}
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #4353FF;
+}
+
+.logo span {
+    color: white;
+}
+
+.cabecalho nav a {
+    color: rgba(255,255,255,0.8);
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.botoes-autenticacao {
+    display: flex;
+    gap: 15px;
+}
+
+.destaque {
+    position: relative;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.fundo-destaque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.sobreposicao-destaque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(2,0,36,0.5) 50%);
+    z-index: 2;
+}
+
+.conteudo-destaque {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.conteudo-destaque h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.conteudo-destaque p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.secao-motivos {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.secao-motivos h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.secao-motivos .subtitulo {
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.grade-recursos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.circulo-icone {
+    width: 100px;
+    height: 100px;
+    background-color: #E0E7FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.circulo-icone img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.barra-estatisticas {
+    background-color: #F8F9FD;
+    padding: 40px 0;
+}
+
+.flex-estatisticas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-estatistica {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-estatistica strong {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.item-estatistica span {
+    color: #555;
+    font-size: 14px;
+}
+
+.secao-generos {
+    padding: 20px 0 60px;
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.secao-generos h2 {
+    font-size: 28px;
+}
+
+.ver-todos {
+    color: #4353FF;
+    font-weight: 600;
+}
+
+.grade-generos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.cartao-genero {
+    position: relative;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.cartao-genero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.cartao-genero span {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.secao-mais-vendidos {
+    padding: 40px 0 80px;
+}
+
+.titulo-secao-esquerda {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+    display: inline-block;
+    width: 100%;
+}
+
+.grade-jogos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.cartao-jogo {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-jogo:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-cartao {
+    height: 200px;
+    background-color: #eee;
+}
+
+.imagem-cartao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-cartao {
+    padding: 15px;
+}
+
+.info-cartao h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.linha-preco {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.preco {
+    font-weight: 700;
+    color: #4353FF;
+    font-size: 14px;
+}
+
+.selo-desconto {
+    background-color: #FFDEE5;
+    color: #FF3B3B;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.preco-antigo {
+    color: #999;
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.tag-gratis {
+    background-color: #E0E7FF;
+    color: #4353FF;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.secao-em-breve {
+    background-color: #0F1115;
+    padding: 60px 0;
+}
+
+.titulo-secao-branco {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.grade-em-breve {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+}
+
+.grade-em-breve > div:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+.grade-em-breve > div:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+.grade-em-breve > div:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
+.grade-em-breve > div:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+
+.cartao-em-breve {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.cartao-em-breve .img-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.conteudo-em-breve {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.conteudo-em-breve h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.secao-depoimentos {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #F8F9FD;
+}
+
+.secao-depoimentos h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.secao-depoimentos .subtitulo {
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.grade-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cartao-depoimento {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.cartao-depoimento .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #ddd;
+}
+
+.cartao-depoimento h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cartao-depoimento .estrelas {
+    color: #FBBF24;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.cartao-depoimento p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.rodape {
+    background-color: #0B0D11;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.grade-rodape {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.marca-rodape .logo span {
+    color: white;
+}
+
+.coluna-rodape h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.coluna-rodape ul li {
+    margin-bottom: 12px;
+}
+
+.coluna-rodape ul li a {
+    color: #888;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.coluna-rodape ul li a:hover {
+    color: white;
+}
+
+.icones-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.icones-sociais .icone {
+    width: 32px;
+    height: 32px;
+    background-color: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #888;
+}
+
+.inferior-rodape {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 12px;
+}
